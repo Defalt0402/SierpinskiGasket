@@ -32,7 +32,9 @@ function draw() {
   
   image(topCanvas, 0, 0);
   if (STARTED){
-    nextPoint();
+    for (let i = 0; i < 33; i++){
+      nextPoint();
+    }
   }
 }
 
@@ -49,11 +51,11 @@ function mousePressed(){
 
 
 function nextPoint() {
-  corner = Math.floor(Math.random() * 4); 
-  if (corner == 1){
+  corner = Math.floor(Math.random() * 6); 
+  if (corner == 1 || corner == 2){
     pointX = (pointX + triX1)/2;
     pointY = (pointY + triY1)/2;
-  } else if (corner == 2){
+  } else if (corner == 3 || corner == 4){
     pointX = (pointX + triX2)/2;
     pointY = (pointY + triY2)/2;
   } else {
@@ -71,7 +73,7 @@ function nextPoint() {
   
   topCanvas.noStroke();
   topCanvas.fill(r,g,b);
-  topCanvas.ellipse(pointX, pointY, 3, 3);
+  topCanvas.ellipse(pointX, pointY, 1, 1);
 }
 
 function start() {
