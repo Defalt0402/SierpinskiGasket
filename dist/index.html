@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sierpinski triangle</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
+
+<div id="main">
+  <h1>Sierpinski Triangle</h1>
+  <h2>A Sierpinski Triangle (aka Sirpinski Gasket) is a 2 dimensional fractal, named after Polish mathematician Wacław Sierpiński. Having been shown a program similar to this in a lecture, I decided to try to recreate it with no outside help, both for fun, and as a way to practice writing code in javascript. <br><br>  This was created using the p5.js library, and this is my first time using p5.js. The documentation for this library can be found at <a href="https://p5js.org/">p5js.org</a>. I recommend checking it out if you're interesting in a simple library for creating graphics in js.</h2>
+  <br>
+  <br>
+  <br>
+</div>
+  <hr>
+<div id="main">
+  <h3>Click anywhere on the canvas to begin creating a fractal, or use the buttons below!</h3>
+  <br>
+  <div id="controls">
+    <button class="controlButtons" onclick="start()">Start</button>
+    <button class="controlButtons" onclick="setup()">Reset</button>
+  </div>
+  <div id="canvasContainer"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

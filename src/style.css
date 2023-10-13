@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(100, 180,180);
+  overflow-x: hidden;
+}
+
+#canvasContainer{
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#main h1{
+  font-size: 6vw;
+  padding: 0;
+  margin: 0;
+  font-family: 'Pixelify Sans', cursive;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+#main h2{
+  margin-bottom: 10vh;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  height: 3px;
+  color: gray;
+  background-color: gray;
+  border: none;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  margin-bottom: 5vh;
+}
+
+.controlButtons {
+  width: 10vw;
+  height: 15vh;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 2vw;
+  background-color: rgb(12, 52, 100);
+  color: white;
+  min-width: 100px;
+  min-height: 50px;
+  max-height: 70px;
+  max-width: 190px;
+}
+
+.controlButtons:hover{
+  background-color: rgb(100, 162, 230);
+  cursor: pointer;
+}
